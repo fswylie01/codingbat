@@ -34,10 +34,6 @@ sleepIn(false, true) → true
 ----------
 
 
-
-
-
-
 Solution:
 
 public boolean sleepIn(boolean weekday, boolean vacation) {
@@ -68,10 +64,6 @@ diff21(19) → 2
 diff21(10) → 11
 diff21(21) → 0
 ----------
-
-
-
-
 
 
 Solution:
