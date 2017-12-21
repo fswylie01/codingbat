@@ -577,13 +577,267 @@ public boolean lastDigit(int a, int b) {
 // ------------------------------------------------------------------------------------
 
 --#22--
+Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+
+Conditions:
+sumDouble(1, 2) → 3
+sumDouble(3, 2) → 5
+sumDouble(2, 2) → 8
+----------
 
 
+Solution:
+
+public int sumDouble(int a, int b) {
+  // Store the sum in a local variable
+  int sum = a + b;
+  
+  // Double it if a and b are the same
+  if (a == b) {
+    sum = sum * 2;
+  }
+  
+  return sum;
+}
 
 
+// ------------------------------------------------------------------------------------
+
+--#23--
+Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
+
+Conditions:
+makes10(9, 10) → true
+makes10(9, 9) → false
+makes10(1, 9) → true
+----------
 
 
+Solution:
 
+public boolean makes10(int a, int b) {
+  return (a == 10 || b == 10 || a+b == 10);
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#24--
+Given a string, return a new string where "not " has been added to the front. However, if the
+string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
+
+Conditions:
+notString("candy") → "not candy"
+notString("x") → "not x"
+notString("not bad") → "not bad"
+----------
+
+
+Solution:
+
+public String notString(String str) {
+  if (str.length() >= 3 && str.substring(0, 3).equals("not")) {
+    return str;
+  }
+  
+  return "not " + str;
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#25--
+Given a string, we'll say that the front is the first 3 chars of the string. 
+If the string length is less than 3, the front is whatever is there. Return a new 
+string which is 3 copies of the front.
+
+Conditions:
+front3("Java") → "JavJavJav"
+front3("Chocolate") → "ChoChoCho"
+front3("abc") → "abcabcabc"
+----------
+
+
+Solution:
+
+public String front3(String str) {
+  String front;
+  
+  if (str.length() >= 3) {
+    front = str.substring(0, 3);
+  }
+  else {
+    front = str;
+  }
+
+  return front + front + front;
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#26--
+Given a string, take the first 2 chars and return the string with the 2 chars added at both the front
+and back, so "kitten" yields"kikittenki". If the string length is less than 2, use whatever chars are there.
+
+Conditions:
+front22("kitten") → "kikittenki"
+front22("Ha") → "HaHaHa"
+front22("abc") → "ababcab"
+----------
+
+
+Solution:
+
+public String front22(String str) {
+  // First figure the number of chars to take
+  int take = 2;
+  if (take > str.length()) {
+    take = str.length();
+  }
+  
+  String front = str.substring(0, take);
+  return front + str + front;
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#27--
+Given 2 int values, return true if either of them is in the range 10..20 inclusive.
+
+Conditions:
+in1020(12, 99) → true
+in1020(21, 12) → true
+in1020(8, 99) → false
+----------
+
+
+Solution:
+
+public boolean in1020(int a, int b) {
+  return ((a >= 10 && a <= 20) || (b >= 10 && b <= 20));
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#28--
+Given a string, if the string "del" appears starting at index 1, return a string where that "del" has
+been deleted. Otherwise, return the string unchanged.
+
+Conditions:
+delDel("adelbc") → "abc"
+delDel("adelHello") → "aHello"
+delDel("adedbc") → "adedbc"
+----------
+
+
+Solution:
+
+public String delDel(String str) {
+  if (str.length()>=4 && str.substring(1, 4).equals("del")) {
+    // First char + rest of string starting at 4
+    return str.substring(0, 1) + str.substring(4);
+  }
+  // Otherwise return the original string.
+  return str;
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#29--
+Given three int values, a b c, return the largest.
+
+Conditions:
+intMax(1, 2, 3) → 3
+intMax(1, 3, 2) → 3
+intMax(3, 2, 1) → 3
+----------
+
+
+Solution:
+
+public int intMax(int a, int b, int c) {
+  int max;
+  
+  // First check between a and b
+  if (a > b) {
+    max = a;
+  } else {
+    max = b;
+  }
+  
+  // Now check between max and c
+  if (c > max) {
+    max = c;
+  }
+  
+  return max;
+  
+  // Could use the built in Math.max(x, y) function which selects the larger
+  // of two values.
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#30--
+Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or 
+return 0 if neither is in that range.
+
+Conditions:
+max1020(11, 19) → 19
+max1020(19, 11) → 19
+max1020(11, 9) → 11
+----------
+
+
+Solution:
+
+public int max1020(int a, int b) {
+  // First make it so the bigger value is in a
+  if (b > a) {
+    int temp = a;
+    a = b;
+    b = temp;
+  }
+  
+  // Knowing a is bigger, just check a first
+  if (a >= 10 && a <= 20) return a;
+  if (b >= 10 && b <= 20) return b;
+  return 0;
+}
+
+
+// ------------------------------------------------------------------------------------
+
+--#31--
+Given a string, return a new string where the last 3 chars are now in upper case. If the string has
+less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase
+version of a string.
+
+Conditions:
+endUp("Hello") → "HeLLO"
+endUp("hi there") → "hi thERE"
+endUp("hi") → "HI"
+----------
+
+
+Solution:
+
+public String endUp(String str) {
+  if (str.length() <= 3) return str.toUpperCase();
+  int cut = str.length() - 3;
+  String front = str.substring(0, cut);
+  String back  = str.substring(cut);  // this takes from cut to the end
+  
+  return front + back.toUpperCase();
+}
+
+
+// ------------------------------------------------------------------------------------
 
 
 
