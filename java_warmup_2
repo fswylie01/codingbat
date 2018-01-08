@@ -3,22 +3,24 @@ Java Warmup Problems & Solutions
 
 Source:  http://codingbat.com/java/Warmup-2
 
---#1--  stringTimes              --#17--  
---#2--  doubleX                  --#18--  
---#3--  last2                    --#19--  
---#4--  array123                 --#20--  
---#5--  altPairs                 --#21--  
---#6--                           --#22--  
---#7--                           --#23--  
---#8--                           --#24--  
---#9--                           --#25--  
---#10--                          --#26--  
---#11--                          --#27--  
---#12--                          --#28--  
---#13--                          --#29--  
---#14--                          --#30--  
---#15--                          --#31--  
---#16--                   
+--#1--  stringTimes               
+--#2--  doubleX                   
+--#3--  last2                  
+--#4--  array123                   
+--#5--  altPairs                   
+--#6--  noTriples                       
+--#7--  frontTimes                          
+--#8--  stringBits                           
+--#9--  arrayCount9                          
+--#10-- stringMatch                         
+--#11-- stringYak                       
+--#12-- has271                       
+--#13-- countXX                         
+--#14-- stringSplosion                          
+--#15-- arrayFront9                          
+--#16-- stringX                  
+--#17-- array667
+
 
 
 // ------------------------------------------------------------------------------------
