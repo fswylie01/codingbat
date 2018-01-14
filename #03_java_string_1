@@ -30,19 +30,23 @@ Conditions:
 helloName("Bob") → "Hello Bob!"
 helloName("Alice") → "Hello Alice!"
 helloName("X") → "Hello X!"
-
+----------
 
 Hint:
-The code
-return "xyz" + name;
-would return "xyzBob" for the "Bob" example, so it's not a solution, but it shows the right
-code pattern.
+The code return "xyz" + name;
+would return "xyzBob" for the "Bob" example, so it's not a solution, but it
+shows the right code pattern.
+----------
+
+Solution:
 
 
 
 
 
+// ------------------------------------------------------------------------------------
 
+--#2--
 
 
 
