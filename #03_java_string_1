@@ -5,7 +5,7 @@ Source:  http://codingbat.com/java/String-1
 
 --#1--  helloName               
 --#2--  makeOutWord                   
---#3--                    
+--#3--  firstHalf                  
 --#4--                     
 --#5--                     
 --#6--                         
@@ -68,6 +68,24 @@ Solution:
 // ------------------------------------------------------------------------------------
 
 --#3--
+Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
+
+Conditions:
+firstHalf("WooHoo") → "Woo"
+firstHalf("HelloThere") → "Hello"
+firstHalf("abcdef") → "abc"
+----------
+
+Solution:
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#4--
 
 
 
