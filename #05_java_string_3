@@ -3,7 +3,7 @@ Java Warmup Problems & Solutions
 Source:  http://codingbat.com/java/String-3
 
 --#1--  countYZ               
---#2--                     
+--#2--  gHappy                   
 --#3--                    
 --#4--                     
 --#5--                     
@@ -47,4 +47,27 @@ Solution:
 // ------------------------------------------------------------------------------------
 
 --#2--
+We'll say that a lowercase 'g' in a string is "happy" if there is another 'g' immediately to its
+left or right. Return true if all the g's in the given string are happy.
+
+Conditions:
+gHappy("xxggxx") → true
+gHappy("xxgxx") → false
+gHappy("xxggyygxx") → false
+----------
+
+Hint:
+None...
+----------
+
+Solution:
+
+
+
+
+
+
+
+
+
 
