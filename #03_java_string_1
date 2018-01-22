@@ -6,14 +6,14 @@ Source:  http://codingbat.com/java/String-1
 --#1--  helloName               
 --#2--  makeOutWord                   
 --#3--  firstHalf                  
---#4--                     
---#5--                     
---#6--                         
---#7--                            
---#8--                             
---#9--                            
---#10--                          
---#11--                        
+--#4--  nonStart                   
+--#5--  theEnd                   
+--#6--  endsLy                       
+--#7--  middleThree                          
+--#8--  lastChars                           
+--#9--  seeColor                          
+--#10-- extraFront                         
+--#11-- startWord                       
 --#12--                        
 --#13--                          
 --#14--                           
@@ -86,6 +86,157 @@ Solution:
 // ------------------------------------------------------------------------------------
 
 --#4--
+Given 2 strings, return their concatenation, except omit the first char of each. The strings will
+be at least length 1.
+
+Conditions:
+nonStart("Hello", "There") → "ellohere"
+nonStart("java", "code") → "avaode"
+nonStart("shotl", "java") → "hotlava"
+----------
+
+Solution:
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#5--
+Given a string, return a string length 1 from its front, unless front is false, in which case return
+a string length 1 from its back. The string will be non-empty.
+
+Conditions:
+theEnd("Hello", true) → "H"
+theEnd("Hello", false) → "o"
+theEnd("oh", true) → "o"
+----------
+
+Solution:
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#6--
+Given a string, return true if it ends in "ly".
+
+Conditions:
+endsLy("oddly") → true
+endsLy("y") → false
+endsLy("oddy") → false
+----------
+
+Solution:
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#7--
+Given a string of odd length, return the string length 3 from its middle, so "Candy" yields
+"and". The string length will be at least 3.
+
+Conditions:
+middleThree("Candy") → "and"
+middleThree("and") → "and"
+middleThree("solving") → "lvi"
+----------
+
+Solution:
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#8--
+Given 2 strings, a and b, return a new string made of the first char of a and the last char
+of b, so "yo" and "java" yields "ya". If either string is length 0, use '@' for its missing char.
+
+Conditions:
+lastChars("last", "chars") → "ls"
+lastChars("yo", "java") → "ya"
+lastChars("hi", "") → "h@"
+----------
+
+Solution:
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#9--
+Given a string, if the string begins with "red" or "blue" return that color string, otherwise
+return the empty string.
+
+Conditions:
+seeColor("redxx") → "red"
+seeColor("xxred") → ""
+seeColor("blueTimes") → "blue"
+----------
+
+Solution:
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#10--
+Given a string, return a new string made of 3 copies of the first 2 chars of the original string.
+The string may be any length. If there are fewer than 2 chars, use whatever is there.
+
+Conditions:
+extraFront("Hello") → "HeHeHe"
+extraFront("ab") → "ababab"
+extraFront("H") → "HHH"
+----------
+
+Solution:
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#11--
+Given a string and a second "word" string, we'll say that the word matches the string if it appears
+at the front of the string, except its first char does not need to match exactly. On a match, return
+the front of the string, or otherwise return the empty string. So, so with the string "hippo" the
+word "hi" returns "hi" and "xip" returns "hip". The word will be at least length 1.
+
+Conditions:
+startWord("hippo", "hi") → "hi"
+startWord("hippo", "xip") → "hip"
+startWord("hippo", "i") → "h"
+----------
+
+Solution:
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#12--
 
 
 
