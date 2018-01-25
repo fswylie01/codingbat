@@ -14,8 +14,8 @@ Source:  http://codingbat.com/java/String-1
 --#9--  seeColor                          
 --#10-- extraFront                         
 --#11-- startWord                       
---#12--                        
---#13--                          
+--#12-- makeAbba                       
+--#13-- extraEnd                         
 --#14--                           
 --#15--                           
 --#16--                   
@@ -237,10 +237,42 @@ Solution:
 // ------------------------------------------------------------------------------------
 
 --#12--
+Given two strings, a and b, return the result of putting them together in the order abba,
+e.g. "Hi" and "Bye" returns "HiByeByeHi".
+
+Conditions:
+makeAbba("Hi", "Bye") → "HiByeByeHi"
+makeAbba("Yo", "Alice") → "YoAliceAliceYo"
+makeAbba("What", "Up") → "WhatUpUpWhat"
+----------
+
+Solution:
 
 
 
 
+
+// ------------------------------------------------------------------------------------
+
+--#13--
+Given a string, return a new string made of 3 copies of the last 2 chars of the original string.
+The string length will be at least 2.
+
+Conditions:
+extraEnd("Hello") → "lololo"
+extraEnd("ab") → "ababab"
+extraEnd("Hi") → "HiHiHi"
+----------
+
+Solution:
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#14--
 
 
 
