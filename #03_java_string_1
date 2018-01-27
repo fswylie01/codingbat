@@ -16,7 +16,7 @@ Source:  http://codingbat.com/java/String-1
 --#11-- startWord                       
 --#12-- makeAbba                       
 --#13-- extraEnd                         
---#14--                           
+--#14-- withoutEnd                          
 --#15--                           
 --#16--                   
 --#17-- 
@@ -273,6 +273,26 @@ Solution:
 // ------------------------------------------------------------------------------------
 
 --#14--
+Given a string, return a version without the first and last char, so "Hello" yields "ell". The string
+length will be at least 2.
+
+Conditions:
+withoutEnd("Hello") → "ell"
+withoutEnd("java") → "av"
+withoutEnd("coding") → "odin"
+----------
+
+Solution:
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#15--
+
 
 
 
