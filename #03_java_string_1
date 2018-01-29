@@ -18,8 +18,8 @@ Source:  http://codingbat.com/java/String-1
 --#13-- extraEnd                         
 --#14-- withoutEnd                          
 --#15-- left2                          
---#16--                   
---#17-- 
+--#16-- withouEnd2                  
+--#17-- nTwice
 
 // ------------------------------------------------------------------------------------
 
@@ -292,7 +292,8 @@ Solution:
 // ------------------------------------------------------------------------------------
 
 --#15--
-Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. The string length will be at least 2.
+Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end.
+The string length will be at least 2.
 
 Conditions:
 left2("Hello") → "lloHe"
@@ -312,8 +313,35 @@ Solution:
 // ------------------------------------------------------------------------------------
 
 --#16--
+Given a string, return a version without both the first and last char of the string. The string
+may be any length, including 0.
+
+Conditions:
+withouEnd2("Hello") → "ell"
+withouEnd2("abc") → "b"
+withouEnd2("ab") → ""
+----------
+
+Solution:
 
 
+
+
+
+
+// ------------------------------------------------------------------------------------
+
+--#17--
+Given a string and an int n, return a string made of the first and last n chars from the string.
+The string length will be at least n.
+
+Conditions:
+nTwice("Hello", 2) → "Helo"
+nTwice("Chocolate", 3) → "Choate"
+nTwice("Chocolate", 1) → "Ce"
+----------
+
+Solution:
 
 
 
